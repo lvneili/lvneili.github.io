@@ -35,7 +35,7 @@ html, body {
     	 transform: rotate(90deg);
     }
 /*s1 第一屏 样式 -开始*/
-.s1{
+.s1,.s2{
     position: relative;
     height: 100%;
     background:url(../img/bj.png);
@@ -112,4 +112,87 @@ html, body {
 }
 .s1 .footer img:nth-of-type(2){
     left:-95px;
+}
+
+
+
+
+/*                    第二屏*/
+.s2{
+	color:#00f8ca;
+}
+.s2 h2{
+	font-size: 26px;
+	margin-top: 10px;
+	position: relative;
+	top:12%;
+}
+.s2 small{
+	font-size: 14px;
+	display: block;
+	margin-top: 10px;
+	letter-spacing:5px;
+}
+.s2 h2::before,.s2 h2::after{
+	content: "";
+	width: 80px;
+	height: 20px;
+	display: inline-block;
+	position: absolute;
+}
+.s2 h2::before{
+	
+	background:url(../img/14.png);
+	background-size: contain;
+	margin-left: -95px;
+	margin-top: 10px;
+}
+.s2 h2::after{
+	
+	background:url(../img/13.png);
+	background-size: contain;
+	margin-left: 66px;
+	margin-top: 10px;
+	top:0;
+	
+}
+.s2 div{
+	position: absolute;
+	top:25%;
+	width:80%;
+	height: 380px;
+	left: 50%;
+	margin-left: -40%;
+}
+.s2 div img{
+	width:100%;
+	position: absolute;
+	left:0;
+ 	
+}
+.s2 div p{
+	text-align: left;
+	padding:0 10%;
+	font-size: 14px;
+	line-height: 2em;
+	margin-bottom: 10px;
+}
+.s2 div p:nth-of-type(1){
+	padding-top: 20px;
+}
+.s2 div span{
+
+    background: -webkit-linear-gradient(left, #00e7f9, #00fd9f);
+	width: 120px;
+	height: 25px;
+	border-radius: 10px;
+	font-size: 14px;
+	color:#000;
+	font-weight: bold;
+	line-height: 25px;
+	display: inline-block;
+	position: absolute;
+	bottom:-50px;
+	left:50%;
+	margin-left: -60px;
 }
