@@ -74,7 +74,7 @@ html, body {
 .s1 .main img:nth-of-type(1){
 	width: 45%;
 	top:226px;
-	left:110px;
+	left:114px;
 	
 }
 .s1 .main img:nth-of-type(2){
@@ -92,7 +92,10 @@ html, body {
 	background:url(../img/9.png);
 	background-size:100%;
 	width: 210px;
+	height: 24px;
+	margin-top: 20px;
 	font-size: Arial;
+	font-weight:bold;
 	border-radius: 10px;;
 	
 	
