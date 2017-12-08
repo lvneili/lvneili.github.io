@@ -47,27 +47,34 @@ html, body {
     width: 34px;
     top: 126px;
     left:50px;
+    animation: swing infinite;
 }
 .s1 .header img:nth-of-type(2){
     width:63px;
     top:90px;
     right: 39px;
+    animation: swing infinite;
 }
 .s1 .header img:nth-of-type(3){
     width:58px;
     bottom:195px;
     left: 34px;
+    animation: swing infinite;
 }
 .s1 .header img:nth-of-type(4){
     width:48px;
     bottom:211px;
     right:49px;
+    animation: swing infinite;
 }
 .s1 .header img:nth-of-type(5){
     width:70%;
     left: 50%;
     top: 25%;
     margin-left: -35%;
+    /*animation: bounceIn 5s;
+    animation-iteration-count:infinite ;*/
+   animation: pulse infinite;
 }
 .s1 .main{
     position: absolute;
@@ -105,7 +112,7 @@ html, body {
 }
 .s1 .footer img{
     position: absolute;
-    height: 70px;
+    height: 80px;
 }
 .s1 .footer img:nth-of-type(1){
     left: 0;
