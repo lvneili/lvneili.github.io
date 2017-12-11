@@ -22,5 +22,23 @@ var swiper = new Swiper('.swiper-container', {
         swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
       } 
     }
+    	
     });
-   
+    
+    
+   var mp3=document.querySelector("#mp3");
+   var mp3btn=document.querySelector("#mp3btn");
+// 点击暂停
+// mp3btn.style.animationPlayState="paused";
+// 点击继续
+// mp3btn.style.animationPlayState="running";
+	mp3btn.onclick=function(){
+	if(mp3.paused){
+		mp3btn.style.animationPlayState="running";
+		mp3.play();
+	}else{
+		mp3btn.style.animationPlayState="paused";
+		mp3.pause();
+	}
+	
+};
