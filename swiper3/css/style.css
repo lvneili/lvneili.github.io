@@ -26,15 +26,30 @@ html, body {
 
     }
     .swiper-button-next{
-    	 
+    	 width:13px;
+    	 height: 30px;
+    	 background-size: contain;
     	 right:auto;
     	 margin-left: -13.5px;
     	 left:50%;
     	 top:auto;
     	 bottom:5%;
-    	 transform: rotate(90deg);
+    	 transform: rotate(-90deg);
+    	 animation:  buttonnext 1s infinite;
+    	 
     	
     }
+    @keyframes buttonnext{
+    	from{
+    		botton:3%;
+    		opacity: 1;
+    	}
+    	to{
+    		botton:6%;
+    		opacity: 0;
+    	}
+    }
+    
     
     #mp3btn{
 		position: absolute;
@@ -73,13 +88,15 @@ html, body {
 	}
 	
 /*s1 第一屏 样式 -开始*/
-.s1,.s2,.s3{
+.s1,.s2,.s3,.s4,.s5,.s6,.s7{
     position: relative;
     height: 100%;
     background:url(../img/bj.png);
 }
 
-
+.swing{
+	transform-origin:center;
+}
 .s1 .header img{
     position: absolute;
 }
@@ -293,26 +310,314 @@ html, body {
 	
 }
 .s3 ul{
-	position: absolute;
+	position: relative;
 	margin:160px;
 }
 .s3 ul li{
+	width: 70px;
+    height: 70px;
+    line-height:70px;
+    opacity: 0.9;
+    font-weight: bold;
+	position: absolute;
 	color:#00F8CA;
 	text-align: center;
 	list-style: none;
 	border-radius: 50%;
     background: radial-gradient(rgba(0, 0, 0, 0),#358c7c); /* 标准的语法 */
+   animation: pulse infinite;
 }
-.s3 ul:nth-of-type(1){
-    width: 80px;
-    height: 80px;
-     line-height:80px;
-    opacity: 0.9;
-   
-    font-weight: bold;
+.s3 ul li:nth-of-type(1){
 
+    top:0px;
+    left:-60px;
+    
 
 }
+.s3 ul li:nth-of-type(2){
+
+   	top:0px;
+    left:70px;
+    
+
+}
+.s3 ul li:nth-of-type(3){
+
+    top:130px;
+    left:-130px;    
+
+}
+.s3 ul li:nth-of-type(4){
+	width: 130px;
+	height: 130px;
+    line-height: 130px;
+    position: absolute;
+	top:100px;
+	left:-20px;
+    
+}
+.s3 ul li:nth-of-type(5){
+  
+    top:130px;
+    left:140px; 
+    
+
+}
+.s3 ul li:nth-of-type(6){
+
+    top:260px;
+    left:70px;
+    
+
+}
+.s3 ul li:nth-of-type(7){
+
+     top:260px;
+    left:-70px;
+    
+
+}
+.s3 div .title{
+    width: 75%;
+    height: 70px;
+    border-left:3px solid #00e6b6;
+    padding-left:30px;
+    font-size:14px;
+    line-height:30px;
+    position: absolute;
+    left: 11%;
+    bottom: 11%;
+    
+}
 
 
+/*                  第四屏*/
+.s4{
+	color:#00f8ca;
+}
+.s4 h2{
+	font-size: 26px;
+	margin-top: 10px;
+	position: relative;
+	top:12%;
+}
+.s4 h2 span{
+	font-size: 26px;
+}
+.s4 small{
+	font-size: 14px;
+	display: block;
+	margin-top: 10px;
+	letter-spacing:5px;
+}
+.s4 h2::before,.s4 h2::after{
+	content: "";
+	width: 80px;
+	height: 20px;
+	display: inline-block;
+	position: absolute;
+}
+.s4 h2::before{
+	animation: swing infinite;
+	background:url(../img/14.png);
+	background-size: contain;
+	margin-left: -95px;
+	margin-top: 10px;
+}
+.s4 h2::after{
+	animation: swing infinite;
+	background:url(../img/13.png);
+	background-size: contain;
+	margin-left: 66px;
+	margin-top: 10px;
+	top:0;
+	
+}
+.s4 div{
+	
+	position: absolute;
+	top:25%;
+	width:80%;
+	height: 380px;
+	left: 50%;
+	margin-left: -44%;
+	
+	
+}
+.s4 div img{
+	width:110%;
+	height: 120%;
+	position: absolute;
+	left:0;
+ 	opacity: 0.6;
+}
+.s4 div h4 p{
+	display:inline-block;
+	font-size:20px;
+	text-align:center ;
+	margin-top: 10px;
+}
+.s4 div h4 p:nth-of-type(1){
+	color:#00f8ca;
+	
+}
+.s4 div h4 p:nth-of-type(2){
+	color:#5daef7;
+}
+.s4 div h4 p:nth-of-type(1) button{
+	
+	width: 20px;
+	height: 20px;
+	border-radius:10px;
+	background:#00f8ca;
+}
+.s4 div h4 p:nth-of-type(2) button{
+	
+	width: 20px;
+	height: 20px;
+	border-radius:10px;
+	background:#5daef7;
+}
+.s4 div ul{
+	float:left;
+	margin-left: 20px;
+	margin-bottom: 70px;
+}
 
+.s4 div ul li{
+	list-style: none;
+}
+.s4 div  h3{
+	color:#00e7f9;
+	float:left;
+	display: inline-block;
+}
+.s4 div  h3  span{
+	color:#fff;
+}
+.s4 div ul p{
+	color:#00f8ca;
+	font-size: 16px;
+	margin-top: 10px;
+	padding-top: 30px;
+}
+.s4 div ul input{
+	float:left;
+
+	
+}
+.s4 div::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.s4 div ul li:nth-of-type(1) p input{
+	width: 270px;
+	background: -webkit-linear-gradient(left, rgba(242, 254, 255, 0.56), #00fd9f);
+}.s4 div ul li:nth-of-type(2) p input{
+	width: 220px;
+	background: -webkit-linear-gradient(left, rgba(242, 254, 255, 0.56),#00fd9f);
+}.s4 div ul li:nth-of-type(3) p input{
+	width: 200px;
+		background: -webkit-linear-gradient(left, rgba(242, 254, 255, 0.56), #00fd9f);
+}
+.s4 div ul li h5{
+	color:#5daef7;
+	font-size: 16px;
+}
+.s4 div ul li:nth-of-type(1) h5 input{
+		background: -webkit-linear-gradient(left, rgba(242, 254, 255, 0.56),#5daef7);
+	
+	width: 170px;
+	
+}
+.s4 div ul li:nth-of-type(2) h5 input{
+		background: -webkit-linear-gradient(left, rgba(242, 254, 255, 0.56),#5daef7);
+	width: 150px;
+	
+}
+.s4 div ul li:nth-of-type(3) h5 input{
+		background: -webkit-linear-gradient(left, rgba(242, 254, 255, 0.56),#5daef7);
+	width: 100px;
+	
+}
+.s4 .zi{
+	
+	width: 80%;
+	height: 30%;
+	margin:auto;
+	line-height: 25px;
+	
+}
+
+/*               第五屏*/
+.s5{
+	color:#00f8ca;
+}
+.s5 h2{
+	font-size: 26px;
+	margin-top: 10px;
+	position: relative;
+	top:12%;
+}
+.s5 h2 span{
+	font-size: 26px;
+}
+.s5 small{
+	font-size: 14px;
+	display: block;
+	margin-top: 10px;
+	letter-spacing:5px;
+}
+.s5 h2::before,.s5 h2::after{
+	content: "";
+	width: 80px;
+	height: 20px;
+	display: inline-block;
+	position: absolute;
+}
+.s5 h2::before{
+	animation: swing infinite;
+	background:url(../img/14.png);
+	background-size: contain;
+	margin-left: -95px;
+	margin-top: 10px;
+}
+.s5 h2::after{
+	animation: swing infinite;
+	background:url(../img/13.png);
+	background-size: contain;
+	margin-left: 66px;
+	margin-top: 10px;
+	top:0;
+	
+}
+.s5 div{
+	
+	position: absolute;
+	top:25%;
+	width:80%;
+	height: 380px;
+	left: 50%;
+	margin-left: -40%;
+	animation: pulse infinite;
+	
+	
+}
+
+.s5 div img:nth-of-type(1){
+	margin-top:30px;
+	margin-left: 0px;
+	margin-bottom: 40px;
+}
+.s5 div img:nth-of-type(2){
+	margin-top:30px;
+	margin-left: 40px;
+	margin-bottom: 40px;
+}
+.s5 div img:nth-of-type(3){
+	margin-left: 0px;
+}
+.s5 div img:nth-of-type(4){
+	margin-left: 40px;
+}
