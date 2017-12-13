@@ -1,0 +1,213 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+    }
+    .swiper-button-next{
+    	 width:13px;
+    	 height: 30px;
+    	 background-size: contain;
+    	 right:auto;
+    	 margin-left: -13.5px;
+    	 left:50%;
+    	 top:auto;
+    	 bottom:5%;
+    	 transform: rotate(-90deg);
+    	 animation:  buttonnext 1s infinite;
+    	 
+    	
+    }
+    @keyframes buttonnext{
+    	from{
+    		botton:3%;
+    		opacity: 1;
+    	}
+    	to{
+    		botton:6%;
+    		opacity: 0;
+    	}
+    }
+    
+    
+    #mp3btn{
+		position: absolute;
+		right:5%;
+		top:5%;
+		z-index: 100;
+		width: 38px;
+		height: 38px;
+		background: rgba(0,0,0,0.5);
+		border-radius: 50%;
+		border:4px solid #292929; 
+		text-align: center;
+		line-height: 38px;
+	/*	transform: rotateZ(0 deg);*/
+		animation: mp3key 5s;
+		/*一直*/
+		animation-iteration-count: infinite;
+		/*匀速*/
+		animation-timing-function: linear;
+		/*默认运行动画*/
+		animation-play-state: running;
+		
+	}
+	@keyframes mp3key{
+		form{
+			transform:rotateZ(0deg);
+		}
+		to{
+			transform:rotateZ(360deg);
+		}
+		
+		
+	}
+	#mp3btn img{
+		width:15px;	
+	}
+	
+
+
+
+
+
+/*     通用样式           kaishi*/
+.s1,.s2,.s3,.s4,.s5{
+	position: relative;
+	background: url(../img/bg.jpg);
+	background-size: 100%;
+	 height: 100%;
+}
+
+
+/*      制作            .s1*/
+.s1{
+	color:#fff;
+	position: relative;
+}
+
+.s1 div{
+	width: 100%;
+	height: 50%;
+	margin:auto;
+	position: absolute;
+	top: 37%;
+    left: 14%;
+}
+.s1  img{
+	width: 110px;
+    height: 100px;
+    left: 18%;
+    position: relative;
+	animation: pulse infinite;
+}
+.s1 p{
+	font-family: 楷体;
+    width: 60%;
+    height: 16%;
+    line-height: 52px;
+    position: absolute;
+    top: -40%;
+    font-size: 35px;
+    left: 6%;
+    background:url(../img/biaoti.png) ;
+    background-size: cover;
+}
+.s1 h3{
+	width: 100%;
+    position: absolute;
+    top: 85%;
+    left: -14%;
+    font-size: 18px;
+}
+.s1 h3 span{
+	font-size: 18px;
+}
+.s1 h3 img{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+    top: 110%;
+    left: 43%;
+	
+}
+.s1  div h1{
+	
+	width: 70%;
+    height: 20%;
+    position: relative;
+	background: rgba(3, 13, 21, 0.64);
+	border-radius: 10px;
+	top:-1%;
+	animation: pulse infinite;
+	
+}
+.s1  div h1 span{
+	font-size: 60px;
+	    line-height: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+.s2 img{
+	width: 130px;
+	height: 150px;
+	position: relative;
+	top:49%;
+	animation: pulse infinite;
+}
+.s3 img{
+	width: 150px;
+	height: 140px;
+	position: relative;
+	top:46%;
+	
+	animation: pulse infinite;
+}
+.s4 img{
+	width: 140px;
+    height: 142px;
+    position: relative;
+    top: 48%;
+    opacity: 0.85;
+	animation: pulse infinite;
+}
+.s5 img{
+
+	width: 140px;
+    height: 150px;
+    position: relative;
+    top: 47%;
+    opacity: 0.85;
+	animation: pulse infinite;
+}
+
+
