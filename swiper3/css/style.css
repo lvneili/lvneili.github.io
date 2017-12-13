@@ -242,7 +242,7 @@ html, body {
 	text-align: left;
 	padding:0 10%;
 	font-size: 14px;
-	line-height: 2em;
+	line-height: 1.5em;
 	margin-bottom: 10px;
 }
 .s2 div p:nth-of-type(1){
@@ -314,12 +314,16 @@ html, body {
 	margin:160px;
 }
 .s3 ul li{
+	margin-left: -5px;
+	
+	position: absolute;
 	width: 70px;
     height: 70px;
     line-height:70px;
     opacity: 0.9;
     font-weight: bold;
-	position: absolute;
+    
+	
 	color:#00F8CA;
 	text-align: center;
 	list-style: none;
@@ -328,7 +332,6 @@ html, body {
    animation: pulse infinite;
 }
 .s3 ul li:nth-of-type(1){
-
     top:0px;
     left:-60px;
     
@@ -386,7 +389,7 @@ html, body {
     line-height:30px;
     position: absolute;
     left: 11%;
-    bottom: 11%;
+    bottom: 10%;
     
 }
 
@@ -546,7 +549,7 @@ html, body {
 	width: 80%;
 	height: 30%;
 	margin:auto;
-	line-height: 25px;
+	line-height: 18px;
 	
 }
 
@@ -606,18 +609,214 @@ html, body {
 }
 
 .s5 div img:nth-of-type(1){
-	margin-top:30px;
-	margin-left: 0px;
-	margin-bottom: 40px;
+	position: absolute;
+	top:8%;
+	left:-3%;
+	
 }
 .s5 div img:nth-of-type(2){
-	margin-top:30px;
-	margin-left: 40px;
-	margin-bottom: 40px;
+	position: absolute;
+	top:8%;
+	left: 55%;
+	
 }
 .s5 div img:nth-of-type(3){
-	margin-left: 0px;
+	position: absolute;
+	left:-3%;
+    top: 60%;
 }
 .s5 div img:nth-of-type(4){
-	margin-left: 40px;
+	position: absolute;
+	left: 55%;
+    top: 60%;
+}
+
+
+
+/*     * 第六屏样式  开始 *      */
+
+
+.s6{
+	color:#00f8ca;
+}
+.s6 h2{
+	font-size: 26px;
+	margin-top: 10px;
+	position: relative;
+	top:12%;
+}
+.s6 h2 span{
+	font-size: 26px;
+}
+.s6 small{
+	font-size: 14px;
+	display: block;
+	margin-top: 10px;
+	letter-spacing:5px;
+}
+.s6 h2::before,.s6 h2::after{
+	content: "";
+	width: 80px;
+	height: 20px;
+	display: inline-block;
+	position: absolute;
+}
+.s6 h2::before{
+	animation: swing infinite;
+	background:url(../img/14.png);
+	background-size: contain;
+	margin-left: -95px;
+	margin-top: 10px;
+}
+.s6 h2::after{
+	animation: swing infinite;
+	background:url(../img/13.png);
+	background-size: contain;
+	margin-left: 66px;
+	margin-top: 10px;
+	top:0;
+	
+}
+.s6 .title{
+    position:absolute;
+    width: 80%;
+    height: 57%;
+    top:23%;
+    left:50%;
+    margin-left: -40%;
+    border-left:2px dotted #00fd9d;
+}
+.s6 .title .main{
+    width: 100%;
+    height: 33.33%;
+    position:absolute;
+}
+.s6 .title .main:nth-of-type(1){
+    top:0%;
+    left:0%;
+}
+.s6 .title .main:nth-of-type(2){
+    top:35%;
+    left:0%;
+}
+.s6 .title .main:nth-of-type(3){
+    top:70%;
+    left:0%;
+}
+.s6 .title .main .time{
+    background: -webkit-linear-gradient(left, #00fd9f,rgba(242, 254, 255, 0.56));
+    background-size: cover;
+    width: 90%;
+    height: 20%;
+    margin-left: 10%;
+    color:#000;
+    line-height:28px;
+    text-align:left;
+    padding-left: 10px;
+}
+.s6 .title .main .text{
+    width: 90%;
+    height: 60%;
+    background:rgba(135, 135, 136, 0.11);
+    border-radius: 10px;
+    background-size:cover;
+    text-align:left;
+    margin-left: 10%;
+    margin-top: 10px;
+    font-size:14px;
+    line-height:22px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.s6 .title .main img{
+    position:absolute;
+    top:-16%;
+    left:-9%;
+}
+
+
+
+
+
+
+
+/*     * 第七屏样式  开始 *      */
+
+
+.s7{
+	color:#00f8ca;
+}
+.s7 h2{
+	font-size: 26px;
+	margin-top: 10px;
+	position: relative;
+	top:12%;
+}
+.s7 h2 span{
+	font-size: 26px;
+}
+.s7 small{
+	font-size: 14px;
+	display: block;
+	margin-top: 10px;
+	letter-spacing:5px;
+}
+.s7 h2::before,.s7 h2::after{
+	content: "";
+	width: 80px;
+	height: 20px;
+	display: inline-block;
+	position: absolute;
+}
+.s7 h2::before{
+	animation: swing infinite;
+	background:url(../img/14.png);
+	background-size: contain;
+	margin-left: -95px;
+	margin-top: 10px;
+}
+.s7 h2::after{
+	animation: swing infinite;
+	background:url(../img/13.png);
+	background-size: contain;
+	margin-left: 66px;
+	margin-top: 10px;
+	top:0;
+	
+}
+
+.s7 .title{
+    position:absolute;
+    width: 80%;
+    height: 57%;
+    top:23%;
+    left:50%;
+    margin-left: -40%;
+}
+.s7 .title img{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    left: 0;
+}
+.s7 .title form{
+    width: 90%;
+    height: 70%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.s7 .title form input{
+    width: 100%;
+    height: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border:1px solid #00fd9d;
+    background:#fff;
+}
+.s7 .title form input:nth-of-type(4){
+    background-color:#00f2ca;
+    color:#fff;
+}
+.s7 .title p:nth-of-type(1){
+    margin-top: 15px;
 }
