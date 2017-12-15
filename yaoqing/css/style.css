@@ -129,7 +129,7 @@ html, body {
     line-height: 52px;
     position: absolute;
     top: -40%;
-    font-size: 35px;
+    font-size: 28%;
     left: 6%;
     background:url(../img/biaoti.png) ;
     background-size: cover;
@@ -142,7 +142,7 @@ html, body {
     font-size: 18px;
 }
 .s1 h3 span{
-	font-size: 18px;
+	font-size: 50%;
 }
 .s1 h3 img{
 	width: 50px;
@@ -164,50 +164,204 @@ html, body {
 	
 }
 .s1  div h1 span{
-	font-size: 60px;
+	font-size: 50%;
 	    line-height: 70px;
 }
 
-
-
-
-
-
-
-
-
-
-.s2 img{
-	width: 130px;
-	height: 150px;
-	position: relative;
-	top:49%;
-	animation: pulse infinite;
+.s2 .title img{
+    width: 86%;
+    height: 70%;
+    position: absolute;
+    left: 29px;
+    top: 18%;
 }
-.s3 img{
-	width: 150px;
-	height: 140px;
-	position: relative;
-	top:46%;
+
+.s2 p{
+	color:#fff;
+}
+.s2 h2{
+	color: #00f2ca;
+    padding-top: 11%;
+    padding-bottom: 20%;
+    font-size: 28px;
+}
+
+.s2 .text{
+    width: 70%;
+    text-align:left;
+    position:absolute;
+    top:21%;
+    left:50%;
+    margin-left:-35%;
+    color: #4c4545;
+}
+.s2 .text p{
+    font-size:14px;
+    line-height:20px;
+    margin-bottom: 10px;
+}
+.s2 .text .main p:nth-of-type(1){
+    font-size:20px;
+    margin-bottom:20px;
+    margin-top: 15px;
+}
+.s2 .footer{
+    margin-top: 40px;
+    text-align:right;
+}
+
+
+
+.s3 .title img{
+    width: 86%;
+    height: 70%;
+    position: absolute;
+    left: 29px;
+    top: 18%;
+}
+
+
+
+
+.s4 .title img{
+    width: 86%;
+    height: 70%;
+    position: absolute;
+    left: 29px;
+    top: 18%;
+}
+.s4 .ditu{
+	width: 80%;
+    height: 52%;
+    position: absolute;
+    top: 27%;
+    left: 10%;
 	
-	animation: pulse infinite;
 }
-.s4 img{
-	width: 140px;
-    height: 142px;
-    position: relative;
-    top: 48%;
-    opacity: 0.85;
-	animation: pulse infinite;
+.s4 .ditu1{
+	    width: 5%;
+    height: 5%;
+    position: absolute;
+    top: 53%;
+    left: 60%;
 }
-.s5 img{
 
-	width: 140px;
-    height: 150px;
-    position: relative;
-    top: 47%;
-    opacity: 0.85;
-	animation: pulse infinite;
+.s4 h4{
+	position: absolute;
+	top:10%;
+	left:20%;
+	color:#00f2ca;
+	font-size: 28px;
 }
+
+
+.s5 p img:nth-of-type(1){
+	width: 200px;
+    height:250px;
+    position: absolute;
+     top: 18%;
+    left: 25%;
+	/*animation: pulse infinite;*/
+}
+.s5 p img:nth-of-type(2){
+	width: 100%;
+    height:250px;
+    position: absolute;
+     top: 38%;
+    left: 0%;
+	/*animation: bounceIn infinite;*/
+}
+
+.s5 p img:nth-of-type(3){
+	width: 22%;
+    height: 8%;
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    margin-left: -50px;
+
+}
+
+
+.s5{
+	color:#00f8ca;
+}
+.s5 h2{
+	font-size: 26px;
+	margin-top: 10px;
+	position: relative;
+	top:12%;
+}
+.s5 h2 span{
+	font-size: 26px;
+}
+.s5 small{
+	font-size: 14px;
+	display: block;
+	margin-top: 10px;
+	letter-spacing:5px;
+}
+.s5 h2::before,.s7 h2::after{
+	content: "";
+	width: 80px;
+	height: 20px;
+	display: inline-block;
+	position: absolute;
+}
+.s5 h2::before{
+	animation: swing infinite;
+	background:url(../img/14.png);
+	background-size: contain;
+	margin-left: -95px;
+	margin-top: 10px;
+}
+.s5 h2::after{
+	animation: swing infinite;
+	background:url(../img/13.png);
+	background-size: contain;
+	margin-left: 66px;
+	margin-top: 10px;
+	top:0;
+	
+}
+
+.s5 .title{
+    position:absolute;
+    width: 80%;
+    height: 57%;
+    top:23%;
+    left:50%;
+    margin-left: -40%;
+}
+.s5 .title img{
+      width: 110%;
+    height: 110%;
+    position: absolute;
+    left: -18px;
+}
+.s7 .title form{
+    width: 90%;
+    height: 70%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.s5 .title form input{
+    width: 80%;
+    height: 40px;
+    margin-top: 15%;
+    margin-bottom: 1%;
+    border:1px solid #00fd9d;
+    background:#fff;
+}
+.s5 .title form input:nth-of-type(4){
+    background-color:#00f2ca;
+    border-radius:10px;
+    color:#fff;
+}
+.s5 .title p:nth-of-type(1){
+    margin-top: 15px;
+}
+
+
 
 
